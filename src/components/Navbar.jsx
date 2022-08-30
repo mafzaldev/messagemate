@@ -8,7 +8,7 @@ const Navbar = () => {
   const [user] = useAuthState(auth);
 
   const styles = {
-    nav: `bg-gray-800 h-20 flex justify-between items-center p-4`,
+    nav: `bg-gray-900 h-16 flex justify-between items-center p-4`,
     heading: `flex items-center justify-center gap-1 text-white text-3xl font-bold`,
   };
 

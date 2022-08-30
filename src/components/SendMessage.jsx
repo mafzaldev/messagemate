@@ -4,9 +4,9 @@ import { FiSend } from "react-icons/fi";
 import { auth, db } from "../firebase-config";
 
 const styles = {
-  form: `h-14 w-full max-w-[728px] flex text-xl absolute bottom-0 bg-gray-100`,
-  input: `w-full text-sm p-3 bg-gray-900 text-white outline-none border-none rounded-full m-1`,
-  button: `w-[10%] bg-green-500 rounded-full flex justify-center items-center m-1 hover:bg-green-600 outline-none border-none`,
+  form: `h-14 w-full max-w-[728px] flex text-xl absolute bottom-0 bg-gray-900`,
+  input: `w-full text-sm p-3 bg-gray-900 text-white outline-none border rounded m-2 overflow-y-hidden focus:outline-none focus:ring focus:ring-primary-500 focus:ring-opacity-75`,
+  button: `w-[10%] bg-green-500 rounded flex justify-center items-center m-2 hover:bg-green-600 outline-none border-none`,
 };
 
 const SendMessage = ({ scroll }) => {
@@ -24,8 +24,8 @@ const SendMessage = ({ scroll }) => {
         timestamp: serverTimestamp(),
       });
       setInput("");
-      scroll.current.scrollIntoView({ behavior: "smooth" });
     }
+    scroll.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
