@@ -2,7 +2,7 @@ import React from "react";
 import { auth } from "../firebase-config";
 
 const styles = {
-  message: `flex items-center gap-1 m-3 py-2 px-3 rounded`,
+  message: `flex items-center gap-2 m-3 py-2 px-3 rounded`,
   sent: ` bg-[#4D38A2] text-white flex-row-reverse float-right rounded`,
   received: `bg-[#19182A] text-white float-left rounded`,
   name: `bg-[#12121d] text-xs p-2 rounded-full`,

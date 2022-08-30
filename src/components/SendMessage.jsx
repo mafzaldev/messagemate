@@ -5,8 +5,8 @@ import { auth, db } from "../firebase-config";
 
 const styles = {
   form: `h-14 w-full max-w-[728px] flex text-xl absolute bottom-0 bg-gray-900`,
-  input: `w-full text-sm p-3 bg-gray-900 text-white outline-none border rounded m-2 overflow-y-hidden focus:outline-none focus:ring focus:ring-primary-500 focus:ring-opacity-75`,
-  button: `w-[10%] bg-green-500 rounded flex justify-center items-center m-2 hover:bg-green-600 outline-none border-none`,
+  input: `w-full text-sm p-3 bg-gray-900 text-white outline-none border rounded m-2 overflow-y-hidden focus:outline-none focus:ring focus:ring-primary-500 focus:ring-opacity-75 `,
+  button: `md:w-[10%] w-[20%] bg-green-500 rounded flex justify-center items-center m-2 hover:bg-green-600 outline-none border-none`,
 };
 
 const SendMessage = ({ scroll }) => {
@@ -38,7 +38,7 @@ const SendMessage = ({ scroll }) => {
         placeholder="Type a message..."
       />
       <button className={styles.button} type="submit">
-        <FiSend />
+        <FiSend value={{ size: "100px" }} />
       </button>
     </form>
   );

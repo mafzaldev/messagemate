@@ -7,7 +7,7 @@ import Credits from "./components/Credits";
 
 const styles = {
   container: `max-w-[728px] mx-auto text-center`,
-  section: `flex flex-col h-[100vh] bg-gray-100 shadow-xl relative bg-[#231834]`,
+  section: `flex flex-col md:h-[100vh] h-[91vh] bg-gray-100 shadow-xl relative bg-[#231834]`,
 };
 
 function App() {
