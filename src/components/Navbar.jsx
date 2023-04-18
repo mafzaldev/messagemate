@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className={styles.nav}>
       <h1 className={styles.heading}>
-        Chatter
+        MessageMate
         <HiOutlineChatAlt2 value={{ color: "white" }} />
       </h1>
       {user && <LogOut />}
